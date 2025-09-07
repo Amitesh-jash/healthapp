@@ -1,7 +1,7 @@
 import google.generativeai as genai
 import streamlit as st
 
-genai.configure(api_key="AIzaSyD2pJagmqn2MAqjtUtOtQzQdCqititU2_4")
+genai.configure(api_key="AIzaSyD-ai93GmTu1PXqQlXXvSh-_wg8n_HLgIg")
 
 # Initialize the model (Gemini 1.5 Turbo or Gemini Pro)
 model = genai.GenerativeModel("gemini-2.5-flash")
@@ -26,3 +26,4 @@ prompt = f"Act like an expert nutritionist, comment on the BMI with the followin
 response = model.generate_content(prompt)
 
 st.markdown(response.text)
+
